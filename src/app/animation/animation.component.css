@@ -1,0 +1,789 @@
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+body {
+  line-height: 1; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+nav ul {
+  list-style: none; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 1, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+input, select {
+  vertical-align: middle; }
+
+/* line 2, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+*, *:after, *:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+/* line 21, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+body {
+  background: #000; }
+
+/* line 33, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+p {
+  color: red;
+  background: #080915; }
+
+/* line 37, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.container section {
+  position: relative;
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+  min-height: 615px;
+  vertical-align: top;
+  margin: 0 auto;
+  background: #080915;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 30px 1px #103136 inset;
+  box-shadow: 0px 0px 30px 1px #103136 inset; }
+
+/* line 51, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader-new {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 60, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader-1 .loader-outter {
+  position: absolute;
+  border: 4px solid #f50057;
+  border-left-color: transparent;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: loader-1-outter 4s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  animation: loader-1-outter 4s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite; }
+
+/* line 72, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader-1 .loader-inner {
+  position: absolute;
+  border: 4px solid #f50057;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  left: calc(50% - 40%);
+  top: calc(50% - 40%);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-1-inner 4s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  animation: loader-1-inner 4s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite; }
+
+/* line 85, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader-1 .loader-inner-sm {
+  position: absolute;
+  border: 4px solid #f50057;
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+  left: calc(50% - 30%);
+  top: calc(50% - 30%);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-1-outter 4s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  animation: loader-1-outter 4s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite; }
+
+/* line 98, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader-1 .loader-inner-sm2 {
+  position: absolute;
+  border: 4px solid #f50057;
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  left: calc(50% - 15%);
+  top: calc(50% - 15%);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-1-inner 4s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  animation: loader-1-inner 4s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite; }
+
+@-webkit-keyframes loader-1-outter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes loader-1-outter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes loader-1-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@keyframes loader-1-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+/* line 157, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.animation-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: scale linear 1s; }
+
+/* line 165, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.md-btn-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; }
+
+@keyframes scale {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+/* line 183, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.m-btn {
+  position: relative;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: #25292C;
+  margin: 0px auto;
+  text-align: center;
+  border-radius: 999px;
+  color: #9b9b9b;
+  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.8), 1px 1px 2px black;
+  font-size: 3em;
+  font-family: sans-serif;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), 3px 15px 45px rgba(255, 255, 255, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.5), -3px -15px 45px rgba(0, 0, 0, 0.2), 1px 5px 30px -4px black;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
+  transition: 0.1s ease-out; }
+
+/* line 208, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.m-btn:before {
+  content: "";
+  background: #1A1A1A;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+  border-radius: 999px;
+  box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.3), inset -5px -10px 20px rgba(255, 255, 255, 0.1), inset 1px 1px 2px rgba(0, 0, 0, 0.5), inset 5px 15px 40px rgba(0, 0, 0, 0.2), -2px -10px 10px -20px rgba(255, 255, 255, 0.1), 2px 5px 10px -10px rgba(0, 0, 0, 0.4), 0px 0px 10px 2px #3c3c3c; }
+
+/* line 228, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.blob, .blob:before {
+  -webkit-animation: blob 1s linear;
+  -moz-animation: blob 1s linear;
+  -o-animation: blob 1s linear;
+  animation: blob 1s linear; }
+
+/* line 235, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.blob {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset 3px 15px 45px rgba(0, 0, 0, 0.2), inset -1px -1px 2px rgba(0, 0, 0, 0.5), inset -3px -15px 45px rgba(255, 255, 255, 0.1), 1px 5px 10px -4px black; }
+
+/* line 249, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.wrap {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9; }
+
+/* line 259, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.wrap:last-child {
+  margin-bottom: 0; }
+
+/* line 263, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle1 {
+  background-color: #000;
+  outline: none;
+  font-weight: 600;
+  position: absolute;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  height: 120px;
+  width: 120px;
+  left: 50%;
+  top: 50%;
+  border-radius: 100px;
+  z-index: 2;
+  transform: translate(-50%, -50%); }
+
+/* line 283, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle {
+  position: relative;
+  border-radius: 70px;
+  width: 140px;
+  height: 140px;
+  z-index: 1;
+  animation: rotator linear 4s infinite; }
+
+/* line 293, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle1:hover + .circle, .circle1:active + .circle {
+  animation: rotator linear 2s infinite; }
+
+@keyframes rotator {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/* line 305, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.angled {
+  border: 1px solid;
+  background-image: linear-gradient(45deg, transparent 0%, transparent 30%, #2b934a 30%, #2b934a 70%, transparent 70%, transparent 100%); }
+
+/* line 312, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle2 {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  border: 40px dashed #2b934a;
+  border-radius: 100%;
+  transition: all linear 0.15s;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotator2 linear 10s infinite;
+  box-shadow: 0px 0px 30px 1px #103136 inset;
+  z-index: 8; }
+
+/* line 331, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle2:after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background: #000;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 30px 1px #103136 inset; }
+
+/* line 343, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle2:before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 100%;
+  border: 1px solid #103d1f;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; }
+
+@keyframes rotator2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg); } }
+
+/* line 365, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle3 {
+  display: block;
+  width: 240px;
+  height: 240px;
+  background: transparent;
+  border-left: 10px dashed transparent;
+  border-top: 10px dashed transparent;
+  border-right: 10px dashed transparent;
+  border-bottom: 10px dashed transparent;
+  border-radius: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: border 5s infinite;
+  box-shadow: 0px 0px 30px 1px #103136 inset;
+  z-index: 7; }
+
+/* line 384, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle3:after {
+  content: "";
+  width: 241px;
+  height: 241px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid;
+  border-radius: 100%;
+  z-index: -1; }
+
+@keyframes border {
+  from {
+    border-left-color: transparent;
+    transition: all ease-in-out 0s; }
+  to {
+    border-left-color: #fff;
+    transition: all ease-in-out 5s; } }
+
+/* line 409, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle4 {
+  display: block;
+  width: 280px;
+  height: 280px;
+  background: transparent;
+  border: 40px dashed #2b934a;
+  border-radius: 100%;
+  transition: all linear 0.15s;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotator4 linear 10s infinite;
+  box-shadow: 0px 0px 30px 1px #103136 inset;
+  z-index: 6; }
+
+/* line 428, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle4:after {
+  content: "";
+  width: 260px;
+  height: 260px;
+  background: #000;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 30px 1px #103136 inset; }
+
+/* line 440, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle4:before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 100%;
+  border: 1px solid red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; }
+
+@keyframes rotator4 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
+/* line 463, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle5 {
+  display: block;
+  width: 390px;
+  height: 390px;
+  background: transparent;
+  border-left: 20px solid #2b934a;
+  border-right: 20px solid #2b934a;
+  border-top: 20px dashed transparent;
+  border-bottom: 20px dashed transparent;
+  border-radius: 100%;
+  transition: all linear 0.15s;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotator5 linear 8s infinite;
+  box-shadow: 0px 0px 30px 1px #103136 inset;
+  z-index: 5; }
+
+/* line 484, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle5:after {
+  content: "";
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #2b934a;
+  border-radius: 100%;
+  animation: rotator4 linear 10s infinite; }
+
+@keyframes rotator5 {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  50% {
+    transform: translate(-50%, -50%) rotate(15deg); } }
+
+/* line 507, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle6 {
+  display: block;
+  width: 390px;
+  height: 390px;
+  background: transparent;
+  border: 20px solid #103d1f;
+  border-radius: 100%;
+  transition: all linear 0.15s;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotator5 linear 8s infinite;
+  box-shadow: 0px 0px 30px 1px #103136 inset;
+  z-index: 4; }
+
+/* line 525, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle6:after {
+  width: 392px;
+  height: 392px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 196px;
+  background-image: linear-gradient(90deg, transparent 0%, transparent 40%, #000 40%, #000 60%, transparent 60%, transparent 100%); }
+
+@keyframes rotator6 {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  50% {
+    transform: translate(-50%, -50%) rotate(30deg); } }
+
+/* line 547, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle-shadows {
+  display: block;
+  width: 400px;
+  height: 400px;
+  background: transparent;
+  border-radius: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; }
+
+/* line 562, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.hole {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 572, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  opacity: 0;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+  animation-name: scale2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+/* line 589, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+i:nth-child(1) {
+  animation-delay: 0.3s; }
+
+/* line 593, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+i:nth-child(2) {
+  animation-delay: 0.6s; }
+
+/* line 597, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+i:nth-child(3) {
+  animation-delay: 0.9s; }
+
+/* line 601, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+i:nth-child(4) {
+  animation-delay: 1.2s; }
+
+/* line 605, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+i:nth-child(5) {
+  animation-delay: 1.5s; }
+
+@keyframes scale2 {
+  0% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5); }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5); }
+  100% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0); } }
+
+/* line 630, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle7 {
+  display: block;
+  width: 500px;
+  height: 500px;
+  background: transparent;
+  border-left: 20px dashed #103d1f;
+  border-top: 20px dashed transparent;
+  border-right: 20px dashed #2b934a;
+  border-bottom: 20px dashed transparent;
+  border-radius: 100%;
+  transition: all linear 0.15s;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotator7 linear 10s infinite;
+  box-shadow: 0px 0px 30px 1px #103136 inset;
+  z-index: 3; }
+
+/* line 652, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle7:after {
+  content: "";
+  width: 430px;
+  height: 430px;
+  background: #000;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 30px 1px #103136 inset; }
+
+/* line 664, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.circle7:before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 100%;
+  border: 1px solid #103d1f;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; }
+
+@keyframes rotator7 {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  50% {
+    transform: translate(-50%, -50%) rotate(5deg); } }
+
+/* line 687, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.bottom1 {
+  position: absolute;
+  left: 0;
+  bottom: 50px; }
+
+/* line 692, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.bottom2 {
+  position: absolute;
+  right: 176px;
+  bottom: 50px; }
+
+/* line 699, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 175px;
+  height: 100px;
+  z-index: 999; }
+
+/* line 710, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span {
+  display: block;
+  background: #2b934a;
+  width: 7px;
+  height: 10%;
+  border-radius: 14px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 25%; }
+
+/* line 720, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:last-child {
+  margin-right: 0px; }
+
+/* line 723, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(1) {
+  animation: load 2.5s 1.4s infinite linear; }
+
+/* line 726, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(2) {
+  animation: load 2.5s 1.2s infinite linear; }
+
+/* line 729, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(3) {
+  animation: load 2.5s 1s infinite linear; }
+
+/* line 732, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(4) {
+  animation: load 2.5s 0.8s infinite linear; }
+
+/* line 735, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(5) {
+  animation: load 2.5s 0.6s infinite linear; }
+
+/* line 738, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(6) {
+  animation: load 2.5s 0.4s infinite linear; }
+
+/* line 741, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(7) {
+  animation: load 2.5s 0.2s infinite linear; }
+
+/* line 744, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(8) {
+  animation: load 2.5s 0s infinite linear; }
+
+/* line 747, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(9) {
+  animation: load 2.5s 0.2s infinite linear; }
+
+/* line 750, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(10) {
+  animation: load 2.5s 0.4s infinite linear; }
+
+/* line 753, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(11) {
+  animation: load 2.5s 0.6s infinite linear; }
+
+/* line 756, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(12) {
+  animation: load 2.5s 0.8s infinite linear; }
+
+/* line 759, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(13) {
+  animation: load 2.5s 1s infinite linear; }
+
+/* line 762, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(14) {
+  animation: load 2.5s 1.2s infinite linear; }
+
+/* line 765, C:/pavan/my/dashboard/angular-dashboard/sample/dashboard2/src/app/animation/animation.component.scss */
+.loader span:nth-child(15) {
+  animation: load 2.5s 1.4s infinite linear; }
+
+@keyframes load {
+  0% {
+    background: #2b934a;
+    margin-top: 25%;
+    height: 10%; }
+  50% {
+    background: #103d1f;
+    height: 100%;
+    margin-top: 0%; }
+  100% {
+    background: #2b934a;
+    height: 10%;
+    margin-top: 25%; } }
+
+/*# sourceMappingURL=animation.component.css.map */
